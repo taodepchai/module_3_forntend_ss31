@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function find(...arr) {
+        let find_max = (arr) => {
+          return Math.max(...arr);
+        };
+        let max = arr.map(find_max);
+        return max;
+      }
+      document.write(find([1, 5, 3], [7, 2, 9], [4, 8, 6]));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function check(str,ending){
+            let str1 = str.split(" ");
+            let temp = str1[str1.length-1];
+            for (let i=temp.length-1;i>=0;i--){
+                let str3 = temp.slice(i,temp.length);
+                console.log(str3);
+                if (str3 === ending){
+                    return true;
+                }
+            }
+            return false;
+        }
+        let str = "abcd aeed";
+        let ending = "eed";
+        document.write(check(str,ending));
+    </script>
+</body>
+</html>
